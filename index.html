@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragalya S | Electronics & Communication Engineer & Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Pragalya S - Electronics & Communication Engineering Student, Full Stack Developer Intern, and AI Patent Innovator.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for body, Outfit for headers, Fira Code for code/metrics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Sticky Frosted Glass Navigation Bar -->
+  <header class="glass-navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-badge">PS</span> Pragalya S
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects & Patent</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link btn-nav-contact">Contact Me</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Bio & Intro -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span> Open to IT & Full Stack Roles
+          </div>
+
+          <h1 class="hero-title">
+            Engineering Student & <span class="gradient-text">Full Stack Developer</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Pragalya S. • B.E Electronics & Communication Engineering
+          </h2>
+
+          <p class="hero-description">
+            Final-year ECE student at V.S.B College of Engineering Technical Campus (<strong>8.21 CGPA</strong>). Skilled in <strong>Node.js</strong>, <strong>JavaScript</strong>, <strong>REST APIs</strong>, <strong>WebSockets</strong>, <strong>IoT Systems</strong>, and <strong>AI Workflows</strong>. Passionate about building innovative, high-impact software products.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-code"></i> Explore Projects</a>
+            <a href="https://github.com/pragalya022-tech" target="_blank" class="btn btn-outline" title="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/pragalyas022/" target="_blank" class="btn btn-outline" title="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D Flipping Visiting Card -->
+        <div class="visiting-card-3d-wrapper">
+          <div class="visiting-card-inner" id="visiting-card-inner" onclick="flipVisitingCard()">
+            
+            <!-- FRONT SIDE: Big Formal Photo & Name -->
+            <div class="visiting-card-front card">
+              <div class="card-chip-bar">
+                <span class="chip-label"><i class="fa-solid fa-id-badge"></i> PORTFOLIO ID</span>
+                <span class="chip-status">ECE '27</span>
+              </div>
+
+              <div class="big-photo-frame">
+                <img src="pragalya_photo.jpg" alt="Pragalya S - Official Photo" class="big-profile-img">
+              </div>
+
+              <div class="front-card-info">
+                <h3 class="card-name">Pragalya S</h3>
+                <p class="card-title">Electronics & Communication Engineer</p>
+                <span class="card-sub-pill"><i class="fa-solid fa-laptop-code"></i> Full Stack Developer Intern</span>
+              </div>
+
+              <div class="flip-hint-badge">
+                <i class="fa-solid fa-rotate"></i> Hover or Tap to Flip Card
+              </div>
+            </div>
+
+            <!-- BACK SIDE: Basic Details & Contact Info -->
+            <div class="visiting-card-back card">
+              <div class="back-card-header">
+                <h3>Pragalya S</h3>
+                <span class="back-subtitle">Professional ID & Basic Details</span>
+              </div>
+
+              <div class="back-info-list">
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <div class="info-text">
+                    <strong>B.E ECE (CGPA: 8.21 / 10)</strong>
+                    <span>V.S.B College of Engg. Technical Campus</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <div class="info-text">
+                    <strong>Full Stack Developer Intern</strong>
+                    <span>Codec Technologies (Node.js & JS)</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-award"></i></div>
+                  <div class="info-text">
+                    <strong>AI Patent Creator</strong>
+                    <span>Complaint Management System</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="info-text">
+                    <strong>+91 8015084401</strong>
+                    <span>pragalya022@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="info-text">
+                    <strong>Coimbatore & Udumalpet</strong>
+                    <span>Tamil Nadu, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="back-card-actions">
+                <a href="https://github.com/pragalya022-tech" target="_blank" class="icon-btn" title="GitHub" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pragalyas022/" target="_blank" class="icon-btn" title="LinkedIn" onclick="event.stopPropagation()"><i class="fa-brands fa-linkedin"></i></a>
+                <button class="flip-back-btn"><i class="fa-solid fa-rotate-left"></i> Flip Back</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">SUMMARY</span>
+          <h2 class="section-title">Career Objective & Background</h2>
+        </div>
+
+        <div class="card about-card">
+          <div class="about-icon-box">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <div class="about-body">
+            <p class="bio-text">
+              Passionate and enthusiastic engineering student seeking an opportunity to launch my career in the IT industry. Adept at programming, web development, and collaborative problem-solving, with a strong desire to build innovative products, gain industry experience, and create value through technology-driven solutions.
+            </p>
+
+            <div class="highlights-grid">
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> High Academic Standing (8.21 CGPA)</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Full Stack Web Internship (Node.js & JS)</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Patent Innovator in AI Workflows</div>
+              <div class="hl-item"><i class="fa-solid fa-circle-check"></i> Telecom & Network Infrastructure Exposure</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ACADEMICS</span>
+          <h2 class="section-title">Education History</h2>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- B.E ECE Card -->
+          <div class="card edu-card">
+            <div class="card-year">2023 – 2027</div>
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>B.E Electronics and Communication Engineering</h3>
+            <h4 class="org-title">V.S.B College of Engineering Technical Campus</h4>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+            
+            <div class="gpa-box">
+              <div class="gpa-header">
+                <span>Cumulative CGPA</span>
+                <span class="gpa-val">8.21 / 10.0</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 82.1%;"></div>
+              </div>
+            </div>
+
+            <div class="pill-tags">
+              <span>Embedded Systems</span>
+              <span>Web Architecture</span>
+              <span>IoT Networks</span>
+              <span>Signal Processing</span>
+            </div>
+          </div>
+
+          <!-- XII HSC Card -->
+          <div class="card edu-card">
+            <div class="card-year">2022 – 2023</div>
+            <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+            <h3>XII Higher Secondary Certificate</h3>
+            <h4 class="org-title">Lourde Matha Convent Metric Higher Secondary School</h4>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Udumalpet, Tamil Nadu</p>
+            
+            <div class="gpa-box">
+              <div class="gpa-header">
+                <span>HSC Score</span>
+                <span class="gpa-val">68%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill cyan-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div class="pill-tags">
+              <span>Mathematics</span>
+              <span>Physics</span>
+              <span>Computer Science</span>
+              <span>Chemistry</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">EXPERIENCE</span>
+          <h2 class="section-title">Work Experience & Industrial Exposure</h2>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Internship 1 -->
+          <div class="card exp-card">
+            <div class="exp-top">
+              <div>
+                <span class="role-badge">INTERNSHIP</span>
+                <h3 class="role-title">Full Stack Developer Intern</h3>
+                <h4 class="company-name">Codec Technologies <span class="mode-text">(Remote Mode - Mumbai, MH)</span></h4>
+              </div>
+              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Jan 2026 – Feb 2026</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Developed responsive web application modules using <strong>JavaScript</strong> and <strong>Node.js</strong> for seamless user interactions.</li>
+              <li>Integrated <strong>REST APIs</strong> and backend services for real-time client-server data exchange and data consistency.</li>
+              <li>Implemented database connectivity and full <strong>CRUD operations</strong> to expand overall application feature reliability.</li>
+            </ul>
+
+            <div class="tech-pills">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>REST APIs</span>
+              <span>SQL</span>
+              <span>CRUD Operations</span>
+            </div>
+          </div>
+
+          <!-- Traineeship 2 -->
+          <div class="card exp-card">
+            <div class="exp-top">
+              <div>
+                <span class="role-badge intel-badge">TRAINEESHIP</span>
+                <h3 class="role-title">Industrial Trainee</h3>
+                <h4 class="company-name">Intel Bharat <span class="mode-text">(Udumalpet, Tamil Nadu)</span></h4>
+              </div>
+              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Jan 2024 – Feb 2024</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Gained hands-on exposure to telecom infrastructure and networking systems through participation in <strong>5+ live deployment environments</strong>.</li>
+              <li>Assisted lead engineers in monitoring real-time communication workflows, strengthening practical knowledge of network operations.</li>
+              <li>Observed system implementation across multiple infrastructure projects to develop key telecom industry insights.</li>
+            </ul>
+
+            <div class="tech-pills">
+              <span>Telecom Infrastructure</span>
+              <span>Network Systems</span>
+              <span>Workflow Monitoring</span>
+              <span>Live Deployments</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS & PATENT SECTION -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROJECTS</span>
+          <h2 class="section-title">Featured Innovations & AI Patent</h2>
+        </div>
+
+        <!-- PATENT SPOTLIGHT CARD -->
+        <div class="card patent-card">
+          <div class="patent-header-tag"><i class="fa-solid fa-award"></i> PATENT FILED • MARCH 2026</div>
+          
+          <div class="patent-content">
+            <div class="patent-heading-row">
+              <div class="patent-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3>AI Powered Complaint Management System</h3>
+                <p class="patent-sub">Automated Classification, Prioritization & Resolution Workflows</p>
+              </div>
+            </div>
+
+            <p class="patent-description">
+              Designed an intelligent AI system for automated complaint classification and prioritization. Utilizing machine learning concepts and backend integration to streamline resolution efficiency and track campus infrastructure issues automatically.
+            </p>
+
+            <!-- Interactive AI Simulator Widget -->
+            <div class="widget-box">
+              <div class="widget-header">
+                <span><i class="fa-solid fa-terminal"></i> Try AI Complaint Classifier Sandbox</span>
+                <span class="badge-live">LIVE SIMULATOR</span>
+              </div>
+              <div class="widget-body">
+                <label for="complaint-input" class="input-label">Type a sample complaint to test the AI model:</label>
+                <div class="input-row">
+                  <input type="text" id="complaint-input" value="Main router offline and power supply flickering in block C lab" placeholder="Type complaint here...">
+                  <button id="classify-btn" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Classify AI</button>
+                </div>
+
+                <div id="ai-result-card" class="ai-results hidden">
+                  <div class="res-row">
+                    <span class="res-label">Detected Category:</span>
+                    <strong id="result-category" class="res-val">Telecom & Power Infrastructure</strong>
+                  </div>
+                  <div class="res-row">
+                    <span class="res-label">Priority Score:</span>
+                    <strong id="result-priority" class="res-val urgent">HIGH (88 / 100)</strong>
+                  </div>
+                  <div class="res-row">
+                    <span class="res-label">Automated Action:</span>
+                    <span id="result-action" class="res-text">Auto-assigned to Senior Systems Engineer with immediate alert.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>JavaScript</span>
+              <span>Java</span>
+              <span>Backend Integration</span>
+              <span>Machine Learning Concepts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OTHER PROJECTS GRID -->
+        <div class="projects-grid">
+
+          <!-- Real-Time Chat App -->
+          <div class="card project-item-card">
+            <div class="p-header">
+              <div class="p-icon"><i class="fa-solid fa-comments"></i></div>
+              <div>
+                <h3>Real-Time Chat Application</h3>
+                <span class="p-org">Codec Technologies • Jan 2026 – Feb 2026</span>
+              </div>
+            </div>
+
+            <p class="p-text">
+              Developed a real-time instant messaging application using Node.js and WebSockets with an event-driven architecture to handle concurrent client connections with low latency.
+            </p>
+
+            <!-- Mini Chat Sandbox -->
+            <div class="mini-widget">
+              <div class="mini-widget-header">
+                <i class="fa-solid fa-plug"></i> WebSockets Instant Chat Sandbox
+              </div>
+              <div class="chat-log" id="chat-messages">
+                <div class="msg sys-msg">System: Connected to WebSocket Server</div>
+                <div class="msg bot-msg">Pragalya-Bot: Type a message below to test real-time broadcast!</div>
+              </div>
+              <div class="chat-input-box">
+                <input type="text" id="chat-user-input" placeholder="Type a message...">
+                <button id="chat-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>WebSockets</span>
+              <span>Event-Driven</span>
+            </div>
+          </div>
+
+          <!-- Classroom Automation -->
+          <div class="card project-item-card">
+            <div class="p-header">
+              <div class="p-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <h3>High-Tech Classroom Automation</h3>
+                <span class="p-org">V.S.B College of Engineering • Nov 2024 – Dec 2024</span>
+              </div>
+            </div>
+
+            <p class="p-text">
+              IoT-based classroom automation system designed to monitor and control electrical appliances using Arduino controllers and embedded programming, optimizing energy utilization.
+            </p>
+
+            <!-- IoT Switch Widget -->
+            <div class="mini-widget">
+              <div class="mini-widget-header">
+                <i class="fa-solid fa-sliders"></i> IoT Hardware Control Console
+              </div>
+              <div class="iot-controls">
+                <div class="iot-row">
+                  <span>💡 Smart Lighting</span>
+                  <label class="switch">
+                    <input type="checkbox" id="iot-light-toggle" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="iot-row">
+                  <span>🌀 Smart Fan / HVAC</span>
+                  <label class="switch">
+                    <input type="checkbox" id="iot-fan-toggle">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="iot-status" id="iot-status-msg">
+                  Status: Lights ON | HVAC OFF (Energy Saver Active)
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-pills">
+              <span>Embedded C</span>
+              <span>Arduino IDE</span>
+              <span>IoT Controllers</span>
+              <span>Automation Logic</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COMPETENCIES</span>
+          <h2 class="section-title">Technical Skill Matrix</h2>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1 -->
+          <div class="card skill-cat-card">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="skill-pills-row">
+              <div class="sk-pill"><i class="fa-brands fa-java c-java"></i> Java</div>
+              <div class="sk-pill"><i class="fa-brands fa-js c-js"></i> JavaScript (ES6+)</div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="card skill-cat-card">
+            <h3><i class="fa-solid fa-layer-group"></i> Web & Backend</h3>
+            <div class="skill-pills-row">
+              <div class="sk-pill"><i class="fa-brands fa-html5 c-html"></i> HTML5</div>
+              <div class="sk-pill"><i class="fa-brands fa-node-js c-node"></i> Node.js</div>
+              <div class="sk-pill"><i class="fa-solid fa-network-wired c-api"></i> REST APIs</div>
+              <div class="sk-pill"><i class="fa-solid fa-plug c-ws"></i> WebSockets</div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="card skill-cat-card">
+            <h3><i class="fa-solid fa-microchip"></i> Database & Hardware</h3>
+            <div class="skill-pills-row">
+              <div class="sk-pill"><i class="fa-solid fa-database c-sql"></i> SQL</div>
+              <div class="sk-pill"><i class="fa-solid fa-gears c-c"></i> Embedded C</div>
+              <div class="sk-pill"><i class="fa-solid fa-cube c-arduino"></i> Arduino IDE</div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="card skill-cat-card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools & Soft Skills</h3>
+            <div class="skill-pills-row">
+              <div class="sk-pill"><i class="fa-brands fa-git-alt c-git"></i> Git</div>
+              <div class="sk-pill"><i class="fa-brands fa-github"></i> GitHub</div>
+              <div class="sk-pill"><i class="fa-solid fa-code c-vscode"></i> VS Code</div>
+              <div class="sk-pill">🤝 Teamwork & Collaboration</div>
+              <div class="sk-pill">🧩 Problem-Solving</div>
+              <div class="sk-pill">🌱 Adaptability & Creativity</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CERTIFICATIONS GRID -->
+        <div class="certs-section">
+          <h3 class="sub-title"><i class="fa-solid fa-certificate"></i> Certifications & Hackathons</h3>
+          <div class="certs-grid">
+            <div class="card cert-card">
+              <i class="fa-solid fa-award cert-icon"></i>
+              <div>
+                <h4>Infosys Springboard – Internet of Things</h4>
+                <span class="cert-date">Nov 2025</span>
+              </div>
+            </div>
+            <div class="card cert-card">
+              <i class="fa-solid fa-brain cert-icon"></i>
+              <div>
+                <h4>Coursera – Generative AI in Data Analytics</h4>
+                <span class="cert-date">May 2025</span>
+              </div>
+            </div>
+            <div class="card cert-card">
+              <i class="fa-solid fa-trophy cert-icon"></i>
+              <div>
+                <h4>Genesis Hackathon Participant – Unstop</h4>
+                <span class="cert-date">May 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CONNECT</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="card contact-info-card">
+            <h3>Contact Details</h3>
+            <p>Feel free to reach out for software engineering roles, full stack opportunities, or technical collaborations!</p>
+
+            <div class="contact-list">
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Email Address</span>
+                  <a href="mailto:pragalya022@gmail.com" class="c-val">pragalya022@gmail.com</a>
+                  <button class="copy-btn" onclick="copyText('pragalya022@gmail.com', 'Email copied!')"><i class="fa-regular fa-copy"></i></button>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Phone Number</span>
+                  <a href="tel:+918015084401" class="c-val">+91 8015084401</a>
+                  <button class="copy-btn" onclick="copyText('+91 8015084401', 'Phone copied!')"><i class="fa-regular fa-copy"></i></button>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Location</span>
+                  <span class="c-val">Coimbatore & Udumalpet, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="https://github.com/pragalya022-tech" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/pragalyas022/" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="card contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="c-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" placeholder="jane@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="form-msg">Message</label>
+                <textarea id="form-msg" rows="4" placeholder="Hello Pragalya, I would like to discuss an opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Signed Declaration -->
+        <div class="card declaration-card">
+          <div class="dec-text">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>I hereby declare that the details provided above are true and accurate to the best of my knowledge.</p>
+          </div>
+          <div class="dec-sig">
+            <span class="sig-name">PRAGALYA S</span>
+            <span class="sig-title">B.E ECE Candidate</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <p>&copy; 2026 Pragalya S. Professional Portfolio.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/pragalya022-tech" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pragalyas022/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:pragalya022@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
